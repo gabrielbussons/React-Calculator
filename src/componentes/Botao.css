@@ -1,0 +1,34 @@
+:root{
+    --border-button: solid 1px gray;
+}
+
+.botao{
+    outline: none;
+    border: none;
+    font-size: 1.5em;
+    background-color: white;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+
+}
+
+.botao:active {
+    background-color: #ccc
+}
+
+.botao.duasPosicoes {
+    grid-column: span 2;
+}
+
+.botao.tresPosicoes {
+    grid-column: span 3;
+}
+
+.botao.operacao {
+    background-color: orange;
+    color: white;
+}
+
+.botao.operacao:active {
+    background-color: darkorange;
+}
